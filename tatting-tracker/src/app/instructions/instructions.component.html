@@ -1,0 +1,8 @@
+<h2> Directions Id: {{ instructions.id}} </h2>
+<h2> Project name: {{ instructions.name}} </h2>
+<div> Instructions:
+	<li *ngFor="let step of instructions.stepList; index as i"> 
+		{{i+1}} :{{ step }}
+	</li>
+
+</div>
